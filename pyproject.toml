@@ -1,7 +1,7 @@
 [project]
 name = "rag"
-version = "1.0.0
-description = "basic RAG
+version = "1.0.0"
+description = "basic RAG"
 authors = [
     {name = "falltwo", email = "gjui890@outlook.com"}
 ]
@@ -12,4 +12,6 @@ dependencies = [
     "google-genai>=1.56.0",
     "python-dotenv>=1.2.1",
     "sentence-transformers>=5.2.0",
+    "ipykernel>=6.29.0",
+    "notebook>=7.0.0",
 ]

@@ -47,7 +47,7 @@
     啟用虛擬環境後，使用 `uv pip sync` 來安裝 `uv.lock` 文件中鎖定的所有依賴套件。這能確保您安裝的版本與專案開發時完全一致。同時，我們也需要 `jupyter` 來運行筆記本。
     ```bash
     uv pip sync
-    uv pip install jupyter
+    
     ```
 
 4.  **設定 API 金鑰**
@@ -59,12 +59,24 @@
 
 ## 🚀 如何運行
 
-1.  啟動 Jupyter Notebook：
+完成環境設定後，建議使用 `uv run` 指令來啟動 Jupyter Notebook。這個指令會自動在 `uv` 管理的虛擬環境中執行，無需手動啟用 (`activate`) 環境。
+
+1.  **啟動 Jupyter Notebook**
+
+    在專案的根目錄下，執行以下指令：
     ```bash
-    jupyter notebook
+    uv run jupyter lab
     ```
-2.  在瀏覽器中，打開 `main.ipynb` 文件。
-3.  您可以從頭到尾依次運行每個儲存格，以觀察整個 RAG 流程的運作。
+
+2.  **開啟筆記本**
+
+    上述指令會自動在您的預設瀏覽器中開啟 Jupyter 介面。如果沒有，您可以手動複製終端機中顯示的網址（通常包含一個 token）。
+
+    接著，點擊並打開 `main.ipynb` 文件。
+
+3.  **運行儲存格**
+
+    您可以從頭到尾依次運行每個儲存格，以觀察整個 RAG 流程的運作。
 
 ---
 
